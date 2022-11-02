@@ -125,11 +125,11 @@ void PFMoveToApplicationsFolderIfNecessary(void) {
 			informativeText = [informativeText stringByAppendingString:@" "];
 			informativeText = [informativeText stringByAppendingString:kStrMoveApplicationQuestionInfoWillRequirePasswd];
 		}
-		else if (IsInDownloadsFolder(bundlePath)) {
-			// Don't mention this stuff if we need authentication. The informative text is long enough as it is in that case.
-			informativeText = [informativeText stringByAppendingString:@" "];
-			informativeText = [informativeText stringByAppendingString:kStrMoveApplicationQuestionInfoInDownloadsFolder];
-		}
+		// else if (IsInDownloadsFolder(bundlePath)) {
+		// 	// Don't mention this stuff if we need authentication. The informative text is long enough as it is in that case.
+		// 	informativeText = [informativeText stringByAppendingString:@" "];
+		// 	informativeText = [informativeText stringByAppendingString:kStrMoveApplicationQuestionInfoInDownloadsFolder];
+		// }
 
 		[alert setInformativeText:informativeText];
 
